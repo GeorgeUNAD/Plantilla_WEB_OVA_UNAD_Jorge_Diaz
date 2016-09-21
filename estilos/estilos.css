@@ -1,0 +1,450 @@
+body{
+
+height: 600px;
+width: 1200px;
+background-color: #E0E6F8;
+}
+
+header{
+
+	height: 40px;
+	width: 1200px;
+	background-color: none; /*Estaba yellow*/
+	text-align: center;
+	margin-top: 10px;
+	margin-left: 60px;
+}
+
+nav{
+	background-color: none;
+	height: 30px;
+	width: 1200px;
+	background-color: none; /* #977171 mejor dejarlo blanco*/
+	margin-left: 60px;
+	margin-top: 80px; /* estaba en 63*/
+	float: center;
+}
+h4{
+	font-size: 14px;
+    margin-left: 400px;
+    border: 1px black;
+    color: black;
+    position: relative;
+    top: -110px;
+    width: 50%;
+    text-align: right;
+    float: center;
+    }
+
+h6{
+
+  color:white;
+  font-family: 'Eczar', serif;
+  font-size: 16px;
+}
+h3{
+  font-family: 'Playball', cursive;
+  font-size: 24px;
+}
+
+div{
+text-align: right;
+
+  }
+ 
+section{
+	height: 400px;
+	width: 890px;
+	background-color: none;
+	margin-top: -40px;
+	margin-left: 60px;
+	
+}
+
+article{
+	width: 580px;
+    height: 30px;
+	background-color: blue;
+    margin-left: 10px;
+    float: left;
+    text-align: center;
+    margin-top: 100px;
+} 
+
+aside{  
+	height: 400px;
+	width: 300px;
+	background-color: none;
+	text-align: center;
+	float: right;
+	margin-top: -400px;
+	margin-right: -60px;
+}
+
+footer{
+
+    height: 47px;
+	width: 1200px;
+	background-color: #07375A;
+	margin-top: -20px;
+	margin-left: 60px;
+	text-align: center;
+}
+/*===================================================================================*/
+/* aqui inicia el efecto para ""Objeto Virtual de Aprendizaje para..*/
+h1{
+color: black;
+font-family:Consolas,monospace;
+position:relative;
+top: -148px;
+font-size:90%;
+text-align: right;
+font-family: 'Shadows Into Light', cursive;
+
+}
+//ANIMACIONES
+@keyframes parpadeo{
+from, to{border-color:transparent}
+50%{border-color: none}
+}
+@keyframes escribiendo{
+from{width:35%}
+to{width:0}
+}
+@-webkit-keyframes parpadeo{
+from, to{border-color:transparent}
+50%{border-color: none}
+}
+@-webkit-keyframes escribiendo{
+from{width:35%}
+to{width:0}
+}
+@-moz-keyframes parpadeo {
+from, to{border-color:transparent}
+50%{border-color: none}
+}
+@-moz-keyframes escribiendo {
+from{width:35%}
+to{width:0}
+}
+h1 span{
+position:absolute;
+top:0;
+right:0;
+width:0;
+background-color: #A9BCF5; 
+border-left: .1em solid red;
+box-sizing: border-box;
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+animation: escribiendo 5s steps(36, end), parpadeo 0.5s step-end infinite;
+-webkit-animation: escribiendo 5s steps(36, end), parpadeo 1s step-end infinite;
+-moz-animation: escribiendo 5s steps(36, end), parpadeo 1s step-end infinite;
+}
+
+/* aqui termina el efecto para ""Objeto Virtual de Aprendizaje para..*/
+/*===================================================================================*/
+#navi {  
+	list-style:none;
+	margin:0;
+	padding:0;
+
+}
+#navi li {
+	margin:2px;
+	padding:0; 
+	float:left; /*  para alinear el menú*/
+}
+#navi li a {
+	display:block; 
+	width:100px;
+	padding:4px 0;
+	text-decoration:none;
+	text-align:center;
+	font-size:16px;
+	color: black;  /*#FFFFFF Blanco*/
+	background-color:#D9D0C9; /*#F2F2F2*/
+	border-left: 10px solid #F87916;
+}
+
+#navi li a:hover {
+	color:white;
+	background-color:#07375A;}
+	
+	
+.bajorrelieve {
+background: #000000;
+-webkit-background-clip: text;
+-moz-background-clip: text;
+background-clip: text;
+color: transparent;
+text-shadow: 0px 3px 3px rgba(255,255,255,0.5),0px -1px 1px rgba(0,0,0,.3);
+
+}
+
+.mascara p{
+
+font-size: 12px;
+text-align: center;
+	
+}
+
+.mascara a{
+
+  font-size: 14px;
+text-align: left;
+}
+/*============================================================*/
+/*  aqui inicia efectos section*/
+.slider{
+  width: 100%;
+  margin:auto;
+  overflow: hidden;
+}
+.slider ul{
+  display: flex;
+  padding: 0;
+  width: 500%;
+
+  animation:cambio 20s infinite alternate;
+  animation-timing-function:easy-out; /* esto es para que siempre tenga la misma velocidad la animación*/
+  
+}
+.slider li{
+  list-style: none;
+  width: 100%;
+}
+.slider img{
+  width: 100%;
+  border-radius: 10px;
+  
+}
+
+@keyframes cambio {
+
+  0%{margin-left: 0;}
+  15%{margin-left: 0;}
+
+  20%{margin-left: -100%;}
+  35%{margin-left: -100%;}
+
+  40%{margin-left: -200%;}
+  65%{margin-left: -200%;}
+
+  60%{margin-left: -300%;}
+  75%{margin-left: -300%;}
+
+  80%{margin-left: -400%;}
+  100%{margin-left: -400%;}
+}
+
+/*  aqui termina efectos section*/
+/*============================================================*/
+
+/*  ASIDE Aqui inicia efecto caja de redes  y OFERTA*/
+.creditos {
+  display: block;
+  max-width: 400px;
+  text-align: center;
+  padding: 0;
+  font-size: 0.8em;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.9);
+  margin-top:25px; /* Caja "visitanos"*/
+}
+
+.creditos a {
+  color: white;
+  text-decoration: none;
+  font-weight: 700;
+}
+.creditos a:hover,
+.creditos a:active {
+  text-shadow: 0 0 20px rgba(255, 255, 255, 0.4);
+  color: black; 
+}
+
+.creditos a.button {
+  padding: 6px 12px;
+  margin-top: -10px;
+  background: #01A9DB;
+  border-radius: 6px;
+}
+
+.creditos a.button:hover {
+  background: #F7D358;
+}
+
+aside span {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+  text-align: center;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  display: block;
+}
+span.facebook {
+  background: no-repeat url('https://raw.githubusercontent.com/GeorgeUNAD/redes_2016/master/red.png') -41px 0;
+  width: 40px;
+  height: 40px;
+}
+span.tw-inner {
+  background: no-repeat url('https://raw.githubusercontent.com/GeorgeUNAD/redes_2016/master/red.png') 0 0	;
+  width: 40px;
+  height: 40px;
+}
+.red-social {
+  width: 72px;
+  height: 54px;
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+  border-radius: 6px;
+  margin-top: 160px; /* caja de  Face y Twitter*/
+}
+
+.red-social.fb {
+  background: -webkit-gradient(radial, 37 56, 25, 36 190, 144, from(rgba(51, 88, 144, 0.99)), to(rgba(51, 88, 144, 0.99))), -webkit-gradient(radial, -10 72, 10, 310 -72, 72, from(rgba(54, 93, 152, 0.99)), to(rgba(54, 93, 152, 0.99))), -webkit-gradient(radial, 72 72, 20, -275 -72, 72, from(rgba(54, 93, 152, 0.99)), to(rgba(54, 93, 152, 0.99))) rgba(61, 105, 171, 0.99) !important;
+  background: no-repeat url('http://vsxed.github.com/Social-Slides/sprite.png') 0 -47px;
+}
+.red-social.tw {
+  background: -webkit-gradient(radial, 37 56, 25, 36 190, 144, from(rgba(56, 168, 186, 0.99)), to(rgba(56, 168, 186, 0.99))), -webkit-gradient(radial, -10 72, 10, 310 -72, 72, from(rgba(58, 175, 194, 0.99)), to(rgba(58, 175, 194, 0.99))), -webkit-gradient(radial, 72 72, 20, -275 -72, 72, from(rgba(58, 175, 194, 0.99)), to(rgba(58, 175, 194, 0.99))) rgba(76, 184, 201, 0.99) !important;
+  background: no-repeat url('http://vsxed.github.com/Social-Slides/sprite.png') -73px -47px;
+}
+.red-social:hover > span {
+  top: -29px;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.red-social:hover > .cuenta {
+  bottom: 0;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.cuenta {
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 6px 0;
+  text-align: center;
+  width: 72px;
+  position: absolute;
+  border-radius: 0 0 6px 6px;
+  bottom: -60px;
+  display: block;
+  box-shadow: inset 0 1px 0 0 #ffffff, 0 -1px 0 0 rgba(0, 0, 0, 0.3);
+  background-color: #e8e8e8;
+  background-image: -webkit-linear-gradient(top left, #e8e8e8, #ffffff);
+  background-image: -moz-linear-gradient(top left, #e8e8e8, #ffffff);
+  background-image: -ms-linear-gradient(top left, #e8e8e8, #ffffff);
+  background-image: -o-linear-gradient(top left, #e8e8e8, #ffffff);
+  background-image: linear-gradient(top left, #e8e8e8, #ffffff);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e8e8e8', endColorstr='#ffffff', GradientType=0);;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.cuenta.tw {
+  color: rgba(58, 175, 194, 0.99);
+}
+.cuenta.fb {
+  color: rgba(54, 93, 152, 0.99);
+}
+
+.oferta img{
+  display: block;
+width: 300px;
+height: 70px;
+margin: auto;
+margin-top:-253px; /* caja oferta*/
+border-radius: 10px;
+}
+
+.oferta{
+ -webkit-transition: all 0.5s ease;
+     -moz-transition: all 0.5s ease;
+       -o-transition: all 0.5s ease;
+      -ms-transition: all 0.5s ease;
+          transition: all 0.5s ease;
+}
+
+.oferta:hover{
+-webkit-transform: rotate(-10deg);
+     -moz-transform: rotate(-10deg);
+       -o-transform: rotate(-10deg);
+      -ms-transform: rotate(-10deg);
+          transform: rotate(-10deg);
+}
+
+ 
+ .inscripcion img{ 
+  width: 300px;
+  height: 120px;
+  display:inline-block;
+  margin: auto;
+  margin-top: 10px; /* Consejeria virtual*/
+  border-radius: 10px;
+  border: Powderwhite 5px double;
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+
+}
+
+
+.inscripcion{
+ -webkit-transition: all 0.5s ease;
+     -moz-transition: all 0.5s ease;
+       -o-transition: all 0.5s ease;
+      -ms-transition: all 0.5s ease;
+          transition: all 0.5s ease;
+}
+
+.inscripcion:hover{
+-webkit-transform: rotate(-10deg);
+     -moz-transform: rotate(-10deg);
+       -o-transform: rotate(-10deg);
+      -ms-transform: rotate(-10deg);
+          transform: rotate(-10deg);
+}
+
+ .asesoria img{ 
+  width: 300px;
+  height: 70px;
+  display:inline-block;
+  margin: auto;
+  margin-top: 6px; /* Tutoria virtual*/
+  border-radius: 10px;
+  border: Powderwhite 5px double;
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+} 
+  
+  .asesoria{
+ -webkit-transition: all 0.5s ease;
+     -moz-transition: all 0.5s ease;
+       -o-transition: all 0.5s ease;
+      -ms-transition: all 0.5s ease;
+          transition: all 0.5s ease;
+}
+
+.asesoria:hover{
+-webkit-transform: rotate(-10deg);
+     -moz-transform: rotate(-10deg);
+       -o-transform: rotate(-10deg);
+      -ms-transform: rotate(-10deg);
+          transform: rotate(-10deg);
+}
+
+/* ASIDE Aqui termina efecto caja de redes  y OFERTA consejeria*/
+/*============================================================*/
